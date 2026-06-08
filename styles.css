@@ -164,3 +164,20 @@ button:hover {
     margin: 20px;
     filter: drop-shadow(0 0 10px #ffcc00);
 }
+.services-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.services-text {
+    flex: 1;
+}
+
+.services-image {
+    width: 300px;
+    height: auto;
+    filter: drop-shadow(0 0 10px #ffcc00);
+    border-radius: 10px;
+}

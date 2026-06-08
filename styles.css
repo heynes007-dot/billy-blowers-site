@@ -181,3 +181,11 @@ button:hover {
     filter: drop-shadow(0 0 10px #ffcc00);
     border-radius: 10px;
 }
+.floating-man {
+    position: absolute;
+    left: 20px;
+    top: 450px; /* adjust this number to move him up/down */
+    width: 280px;
+    z-index: 10;
+    filter: drop-shadow(0 0 10px #ffcc00);
+}

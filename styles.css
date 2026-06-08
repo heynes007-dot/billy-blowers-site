@@ -190,3 +190,11 @@ button:hover {
     filter: drop-shadow(0 0 10px #ffcc00);
     mix-blend-mode: multiply; /* removes white background visually */
 }
+.floating-man {
+    opacity: 0;
+    animation: fadeIn 1.5s ease forwards;
+}
+
+@keyframes fadeIn {
+    to { opacity: 1; }
+}

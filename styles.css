@@ -201,3 +201,23 @@ button:hover {
 .services-container {
     position: relative;
 }
+.services {
+    position: relative;
+    background-color: #ffcc00;
+    color: #000;
+    padding: 30px;
+}
+
+.services-inner {
+    max-width: 900px;
+    margin-left: auto; /* pushes content to the right */
+}
+
+.floating-man {
+    position: absolute;
+    left: 40px;       /* distance from the left edge */
+    top: 40px;        /* aligns with heading */
+    width: 280px;
+    z-index: 2;
+    filter: drop-shadow(0 0 10px #ffcc00);
+}

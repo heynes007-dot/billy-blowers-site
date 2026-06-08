@@ -155,3 +155,12 @@ button:hover {
         0 0 20px #ffcc00,
         0 0 30px #ffcc00;
 }
+.hero-image {
+    mix-blend-mode: multiply; /* blends with yellow background */
+}
+.hero-image {
+    width: 300px;
+    float: right;
+    margin: 20px;
+    filter: drop-shadow(0 0 10px #ffcc00);
+}

@@ -183,13 +183,13 @@ button:hover {
 }
 .floating-man {
     position: absolute;
-    left: 40px;          /* distance from the left edge */
-    top: 720px;          /* adjust until he lines up perfectly */
+    left: -320px;   /* moves him to the left of the list */
+    top: 20px;      /* aligns him with the top of the list */
     width: 280px;
-    z-index: 2;          /* sits behind black blocks but above yellow background */
+    z-index: 5;
     filter: drop-shadow(0 0 10px #ffcc00);
-    mix-blend-mode: multiply; /* removes white background visually */
 }
+
 .floating-man {
     opacity: 0;
     animation: fadeIn 1.5s ease forwards;
@@ -197,4 +197,7 @@ button:hover {
 
 @keyframes fadeIn {
     to { opacity: 1; }
+}
+.services-container {
+    position: relative;
 }

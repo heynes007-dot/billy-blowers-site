@@ -183,9 +183,10 @@ button:hover {
 }
 .floating-man {
     position: absolute;
-    left: 20px;
-    top: 450px; /* adjust this number to move him up/down */
+    left: 40px;          /* distance from the left edge */
+    top: 720px;          /* adjust until he lines up perfectly */
     width: 280px;
-    z-index: 10;
+    z-index: 2;          /* sits behind black blocks but above yellow background */
     filter: drop-shadow(0 0 10px #ffcc00);
+    mix-blend-mode: multiply; /* removes white background visually */
 }

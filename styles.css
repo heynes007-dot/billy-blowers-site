@@ -191,13 +191,13 @@ button:hover {
 
 .floating-man {
     position: absolute;
-    left: 120px;     /* moves him to the right of the black boxes */
-    top: -40x;         /* aligns his head with “General Repairs” */
-    width: 600px;      /* stretches him vertically to match the list height */
-    z-index: 3;
+    left: 60px;         /* moves him left so his left shoulder nears the text */
+    top: -100px;        /* lifts him so his hat overlaps “General Repairs” */
+    width: 500px;       /* stretches him vertically to match the list height */
+    z-index: 3;         /* ensures he sits above the black boxes */
     filter: drop-shadow(0 0 10px #ffcc00);
     opacity: 0;
-    animation: fadeIn 1.8s ease forwards;
+    animation: fadeIn 2s ease forwards;
 }
 @keyframes fadeIn {
     to { opacity: 1; }
@@ -207,8 +207,8 @@ button:hover {
 }
 @media (max-width: 1000px) {
     .floating-man {
-        right: 30px;
-         top: -0px;
-        width: 380px;
+        left: 60px;
+         top: -100px;
+        width: 500px;
     }
 }

@@ -1,13 +1,20 @@
+/* --------------------------------------------------
+   GLOBAL
+-------------------------------------------------- */
 body {
     margin: 0;
     font-family: 'Anton', 'Arial Black', sans-serif;
     background-color: #ffcc00;
     color: #000;
-    background-image: linear-gradient(#ffcc00 1px, transparent 1px),
-                      linear-gradient(90deg, #ffcc00 1px, transparent 1px);
+    background-image: 
+        linear-gradient(#ffcc00 1px, transparent 1px),
+        linear-gradient(90deg, #ffcc00 1px, transparent 1px);
     background-size: 40px 40px;
 }
 
+/* --------------------------------------------------
+   HEADER + NAV
+-------------------------------------------------- */
 header {
     background-color: #000;
     color: #ffcc00;
@@ -20,17 +27,20 @@ nav a {
     margin: 0 15px;
     text-decoration: none;
     font-weight: bold;
-    transition: 0.3s ease; /* smooth animation */
+    transition: 0.3s ease;
 }
 
 nav a:hover {
     color: #ffffff;
-    text-shadow: 
+    text-shadow:
         0 0 10px #ffcc00,
         0 0 20px #ffcc00,
         0 0 30px #ffcc00;
 }
 
+/* --------------------------------------------------
+   HERO
+-------------------------------------------------- */
 .hero {
     background-color: #000;
     color: #ffcc00;
@@ -39,7 +49,10 @@ nav a:hover {
     font-size: 1.2em;
 }
 
-.services, .contact, .gallery {
+/* --------------------------------------------------
+   SERVICES SECTION
+-------------------------------------------------- */
+.services {
     background-color: #ffcc00;
     color: #000;
     padding: 30px;
@@ -47,48 +60,56 @@ nav a:hover {
     margin: auto;
 }
 
-.services ul {
+/* UL is the anchor for the handyman */
+.services-list {
+    position: relative;
     list-style: none;
+    margin: 0;
     padding: 0;
 }
 
-.services li {
+/* Service items */
+.services-list li {
     background-color: #000;
     color: #ffcc00;
     margin: 10px 0;
     padding: 10px;
     font-size: 1.1em;
 }
-.services-positioner {
-    position: relative;
-    max-width: 900px;
-    margin: auto;
-}
-.services-list {
-    position: relative;
+
+/* --------------------------------------------------
+   FLOATING HANDYMAN
+-------------------------------------------------- */
+.floating-man {
+    position: absolute;
+    display: block;
+    width: 500px;
+    left: 300px;     /* horizontal position */
+    top: -130px;     /* vertical position */
+    z-index: 3;
+    filter: drop-shadow(0 0 10px #ffcc00);
+    opacity: 0;
+    animation: fadeIn 2s ease forwards;
 }
 
-footer {
-    background-color: #000;
-    color: #ffcc00;
-    text-align: center;
-    padding: 20px;
-    margin-top: 40px;
-}
-footer a {
-    color: #ffcc00;
-    text-decoration: none;
-    font-weight: bold;
-    transition: 0.3s ease;
+@keyframes fadeIn {
+    to { opacity: 1; }
 }
 
-footer a:hover {
-    color: #ffffff;
-    text-shadow:
-        0 0 10px #ffcc00,
-        0 0 20px #ffcc00,
-        0 0 30px #ffcc00;
+/* --------------------------------------------------
+   RESPONSIVE
+-------------------------------------------------- */
+@media (max-width: 1000px) {
+    .floating-man {
+        left: 60px;
+        top: -100px;
+        width: 500px;
+    }
 }
+
+/* --------------------------------------------------
+   GALLERY
+-------------------------------------------------- */
 .gallery-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -102,8 +123,8 @@ footer a:hover {
 
 .gallery-item img {
     width: 100%;
-    height: 250px; /* fixed height for uniform size */
-    object-fit: cover; /* crops evenly without distortion */
+    height: 250px;
+    object-fit: cover;
     border: 5px solid #000;
     transition: 0.3s ease;
 }
@@ -121,7 +142,23 @@ footer a:hover {
     font-size: 0.95em;
     color: #000;
     font-weight: bold;
+    transition: 0.3s ease;
 }
+
+.caption:hover {
+    color: #ffcc00;
+    background-color: #000;
+    padding: 4px 6px;
+    border-radius: 4px;
+    text-shadow:
+        0 0 10px #ffcc00,
+        0 0 20px #ffcc00,
+        0 0 30px #ffcc00;
+}
+
+/* --------------------------------------------------
+   FORMS
+-------------------------------------------------- */
 form {
     max-width: 600px;
     margin: auto;
@@ -145,70 +182,29 @@ button:hover {
     background-color: #ffcc00;
     color: #000;
 }
-.caption {
-    margin-top: 8px;
-    font-size: 0.95em;
-    color: #000;
+
+/* --------------------------------------------------
+   FOOTER
+-------------------------------------------------- */
+footer {
+    background-color: #000;
+    color: #ffcc00;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+footer a {
+    color: #ffcc00;
+    text-decoration: none;
     font-weight: bold;
     transition: 0.3s ease;
 }
 
-.caption:hover {
-    color: #ffcc00;
-    background-color: #000;
-    padding: 4px 6px;
-    border-radius: 4px;
+footer a:hover {
+    color: #ffffff;
     text-shadow:
         0 0 10px #ffcc00,
         0 0 20px #ffcc00,
         0 0 30px #ffcc00;
-}
-
-.services-wrapper {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 30px;
-}
-
-.services-text {
-    flex: 1;
-
-}
-
-.services-image {
-    width: 300px;
-    height: auto;
-    filter: drop-shadow(0 0 10px #ffcc00);
-    border-radius: 10px;
-}
-@keyframes fadeIn {
-    to { opacity: 1; }
-}
-.services-container {
-    position: relative;
-}
-
-.floating-man {
-    position: absolute;
-    left: 300px;        /* moves him right so his right shoulder aligns with the green line */
-    top: -130px;       /* lifts him so his hat touches the red line */
-    width: 500px;      /* keeps his height spanning the list */
-    z-index: 3;        /* ensures he sits above the black boxes */
-    filter: drop-shadow(0 0 10px #ffcc00);
-    opacity: 0;
-    animation: fadeIn 2s ease forwards;
-}
-@keyframes fadeIn {
-    to { opacity: 1; }
-}
-.services {
-    position: relative;
-}
-@media (max-width: 1000px) {
-    .floating-man {
-        left: 60px;
-         top: -100px;
-        width: 500px;
-    }
 }

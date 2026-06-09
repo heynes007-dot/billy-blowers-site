@@ -63,9 +63,11 @@ nav a:hover {
 /* UL is the anchor for the handyman */
 .services-list {
     position: relative;
+    width: 900px;      /* matches the .services container */
+    margin: 0 auto;    /* centers the UL */
     list-style: none;
-    margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 /* Service items */

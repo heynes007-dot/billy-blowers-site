@@ -84,8 +84,8 @@ nav a:hover {
     position: absolute;
     display: block;
     width: 500px;
-    left: 300px;     /* horizontal position */
-    top: -130px;     /* vertical position */
+    left: 380px;     /* horizontal position */
+    top: -180px;     /* vertical position */
     z-index: 3;
     filter: drop-shadow(0 0 10px #ffcc00);
     opacity: 0;

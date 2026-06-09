@@ -191,9 +191,9 @@ button:hover {
 }
 .floating-man {
     position: absolute;
-    left: -350px;     /* moves him LEFT so his shoulder aligns with the black boxes */
-    top: 10px;        /* aligns his head with the top of the list */
-    width: 480px;     /* stretches him vertically to match the list height */
+    right: -220px;     /* moves him to the right of the black boxes */
+    top: 10px;         /* aligns his head with “General Repairs” */
+    width: 480px;      /* stretches him vertically to match the list height */
     z-index: 2;
     filter: drop-shadow(0 0 10px #ffcc00);
     opacity: 0;
@@ -204,4 +204,10 @@ button:hover {
 }
 .services {
     position: relative;
+}
+@media (max-width: 1000px) {
+    .floating-man {
+        right: -150px;
+        width: 380px;
+    }
 }

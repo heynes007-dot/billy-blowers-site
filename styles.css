@@ -61,6 +61,8 @@ nav a:hover {
 }
 .services-positioner {
     position: relative;
+    max-width: 900px;
+    margin: auto;
 }
 
 footer {

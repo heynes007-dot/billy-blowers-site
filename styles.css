@@ -191,10 +191,10 @@ button:hover {
 
 .floating-man {
     position: absolute;
-    right: 40px;     /* moves him to the right of the black boxes */
-    top: -120x;         /* aligns his head with “General Repairs” */
+    left: 140px;     /* moves him to the right of the black boxes */
+    top: -40x;         /* aligns his head with “General Repairs” */
     width: 600px;      /* stretches him vertically to match the list height */
-    z-index: 2;
+    z-index: 3;
     filter: drop-shadow(0 0 10px #ffcc00);
     opacity: 0;
     animation: fadeIn 1.8s ease forwards;

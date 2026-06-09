@@ -113,6 +113,14 @@ nav a:hover {
    GALLERY
 -------------------------------------------------- */
 .gallery-grid {
+    width: 100% !important;
+    max-width: 900px;
+    margin: 0 auto !important;
+}
+
+
+
+.gallery-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 20px;

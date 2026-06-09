@@ -182,12 +182,6 @@ button:hover {
 .services-container {
     position: relative;
 }
-.services {
-    position: relative;
-    background-color: #ffcc00;
-    color: #000;
-    padding: 30px;
-}
 
 .floating-man {
     position: absolute;

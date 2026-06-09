@@ -192,7 +192,7 @@ button:hover {
 .floating-man {
     position: absolute;
     right: -160px;     /* moves him to the right of the black boxes */
-    top: 40x;         /* aligns his head with “General Repairs” */
+    top: -100x;         /* aligns his head with “General Repairs” */
     width: 580px;      /* stretches him vertically to match the list height */
     z-index: 2;
     filter: drop-shadow(0 0 10px #ffcc00);
@@ -207,8 +207,8 @@ button:hover {
 }
 @media (max-width: 1000px) {
     .floating-man {
-        right: -150px;
-         top: -40px;
+        right: -160px;
+         top: -100px;
         width: 380px;
     }
 }

@@ -61,10 +61,10 @@ nav a:hover {
 }
 
 /* UL is the anchor for the handyman */
-.services-list {
+.services .services-list {
     position: relative;
-    width: 900px;      /* matches the .services container */
-    margin: 0 auto;    /* centers the UL */
+    width: 900px;
+    margin: 0 auto;
     list-style: none;
     padding: 0;
     box-sizing: border-box;
@@ -86,7 +86,7 @@ nav a:hover {
     position: absolute;
     display: block;
     width: 500px;
-    left: 450px;     /* horizontal position */
+    left: 400px;     /* horizontal position */
     top: -180px;     /* vertical position */
     z-index: 3;
     filter: drop-shadow(0 0 10px #ffcc00);
@@ -184,7 +184,12 @@ button:hover {
     background-color: #ffcc00;
     color: #000;
 }
-
+/* --------------------------------------------------
+   Contact
+-------------------------------------------------- */
+.contact {
+    text-align: center;
+}
 /* --------------------------------------------------
    FOOTER
 -------------------------------------------------- */

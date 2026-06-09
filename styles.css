@@ -166,6 +166,9 @@ button:hover {
 .services-text {
     flex: 1;
 }
+.services {
+    position: relative;
+}
 
 .services-image {
     width: 300px;
@@ -188,8 +191,8 @@ button:hover {
 
 .floating-man {
     position: absolute;
-    right: 30px;     /* moves him to the right of the black boxes */
-    top: 0x;         /* aligns his head with “General Repairs” */
+    right: 40px;     /* moves him to the right of the black boxes */
+    top: -120x;         /* aligns his head with “General Repairs” */
     width: 600px;      /* stretches him vertically to match the list height */
     z-index: 2;
     filter: drop-shadow(0 0 10px #ffcc00);

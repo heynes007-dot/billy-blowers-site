@@ -208,6 +208,7 @@ button:hover {
 @media (max-width: 1000px) {
     .floating-man {
         right: -150px;
+         top: -40px;
         width: 380px;
     }
 }

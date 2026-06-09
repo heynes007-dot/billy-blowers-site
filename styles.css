@@ -155,15 +155,7 @@ button:hover {
         0 0 20px #ffcc00,
         0 0 30px #ffcc00;
 }
-.hero-image {
-    mix-blend-mode: multiply; /* blends with yellow background */
-}
-.hero-image {
-    width: 300px;
-    float: right;
-    margin: 20px;
-    filter: drop-shadow(0 0 10px #ffcc00);
-}
+
 .services-wrapper {
     display: flex;
     align-items: center;
@@ -181,20 +173,6 @@ button:hover {
     filter: drop-shadow(0 0 10px #ffcc00);
     border-radius: 10px;
 }
-.floating-man {
-    position: absolute;
-    left: -320px;   /* moves him to the left of the list */
-    top: 20px;      /* aligns him with the top of the list */
-    width: 280px;
-    z-index: 5;
-    filter: drop-shadow(0 0 10px #ffcc00);
-}
-
-.floating-man {
-    opacity: 0;
-    animation: fadeIn 1.5s ease forwards;
-}
-
 @keyframes fadeIn {
     to { opacity: 1; }
 }
@@ -207,17 +185,23 @@ button:hover {
     color: #000;
     padding: 30px;
 }
-
 .services-inner {
     max-width: 900px;
     margin-left: auto; /* pushes content to the right */
 }
-
 .floating-man {
     position: absolute;
-    left: 250px;       /* moves him right so shoulder aligns with black boxes */
-    top: 10px;         /* keeps him level with the heading */
-    width: 440px;      /* increases height proportionally to span the list */
+    left: -350px;     /* moves him LEFT so his shoulder aligns with the black boxes */
+    top: 10px;        /* aligns his head with the top of the list */
+    width: 480px;     /* stretches him vertically to match the list height */
     z-index: 2;
     filter: drop-shadow(0 0 10px #ffcc00);
+    opacity: 0;
+    animation: fadeIn 1.5s ease forwards;
+}
+@keyframes fadeIn {
+    to { opacity: 1; }
+}
+.services {
+    position: relative;
 }

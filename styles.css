@@ -191,7 +191,7 @@ button:hover {
 }
 .floating-man {
     position: absolute;
-    right: -100px;     /* moves him to the right of the black boxes */
+    right: -00px;     /* moves him to the right of the black boxes */
     top: -100x;         /* aligns his head with “General Repairs” */
     width: 580px;      /* stretches him vertically to match the list height */
     z-index: 2;

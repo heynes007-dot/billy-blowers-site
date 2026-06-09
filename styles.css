@@ -59,6 +59,9 @@ nav a:hover {
     padding: 10px;
     font-size: 1.1em;
 }
+.services-positioner {
+    position: relative;
+}
 
 footer {
     background-color: #000;

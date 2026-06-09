@@ -215,9 +215,9 @@ button:hover {
 
 .floating-man {
     position: absolute;
-    left: 180px;       /* moves him right so shoulder aligns with black boxes */
-    top: 20px;         /* keeps him level with the heading */
-    width: 420px;      /* increases height proportionally to span the list */
+    left: 200px;       /* moves him right so shoulder aligns with black boxes */
+    top: 15px;         /* keeps him level with the heading */
+    width: 425px;      /* increases height proportionally to span the list */
     z-index: 2;
     filter: drop-shadow(0 0 10px #ffcc00);
 }

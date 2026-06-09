@@ -186,7 +186,7 @@ button:hover {
 
 .floating-man {
     position: absolute;
-    left: 120px;        /* moves him right so his right shoulder aligns with the green line */
+    left: 200px;        /* moves him right so his right shoulder aligns with the green line */
     top: -130px;       /* lifts him so his hat touches the red line */
     width: 500px;      /* keeps his height spanning the list */
     z-index: 3;        /* ensures he sits above the black boxes */

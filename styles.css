@@ -64,6 +64,9 @@ nav a:hover {
     max-width: 900px;
     margin: auto;
 }
+.services-list {
+    position: relative;
+}
 
 footer {
     background-color: #000;

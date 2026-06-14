@@ -142,6 +142,10 @@ nav a:hover {
     font-size: 0.95em;
     color: #000;
     font-weight: bold;
+    background: rgba(255, 255, 255, 0.85); /* white highlight */
+    padding: 6px 10px;
+    border-radius: 6px;
+    display: inline-block; /* keeps the highlight tight around text */
     transition: 0.3s ease;
 }
 

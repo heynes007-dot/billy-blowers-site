@@ -1,3 +1,19 @@
+.header-logo {
+    width: 180px;                 /* adjust size if needed */
+    display: block;
+    margin: 0 auto 15px auto;     /* centers it above the title */
+    filter: drop-shadow(0 0 10px #ffcc00);
+    transition: 0.3s ease;
+}
+
+.header-logo:hover {
+    transform: scale(1.05);
+    filter: drop-shadow(0 0 15px #ffd700);
+}
+
+
+
+
 /* --------------------------------------------------
    GLOBAL
 -------------------------------------------------- */

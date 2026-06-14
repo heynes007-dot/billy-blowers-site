@@ -2,8 +2,8 @@
    LOGO
 -------------------------------------------------- */
 .header-logo {
-    width: 380px;
-    max-height: 100px;
+    width: 480px;        /* increase length */
+    max-height: 130px;   /* allow more vertical space */
     height: auto;
     display: block;
     margin: 0 auto 15px auto;

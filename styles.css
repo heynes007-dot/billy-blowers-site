@@ -71,9 +71,7 @@ nav a:hover {
     width: 100%;
     background: url("images/BackgroundImage.jpeg") no-repeat center center;
     background-size: cover;
-    padding: 80px 0;
-    min-height: auto;
-    padding-bottom: 80px; /* gives breathing room */
+    padding: 60px 0 120px 0; /* extra bottom padding */
     overflow: hidden;
 }
 /* Centered content inside */

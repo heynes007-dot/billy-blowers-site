@@ -22,14 +22,10 @@
 body {
     margin: 0;
     font-family: 'Anton', 'Arial Black', sans-serif;
-    background-color: #ffcc00;
     color: #000;
-    background-image: 
-        linear-gradient(#ffcc00 1px, transparent 1px),
-        linear-gradient(90deg, #ffcc00 1px, transparent 1px);
-    background-size: 40px 40px;
+    background: url("images/Backgroundimage.jpeg") no-repeat center center fixed;
+    background-size: cover;
 }
-
 /* --------------------------------------------------
    HEADER + NAV
 -------------------------------------------------- */

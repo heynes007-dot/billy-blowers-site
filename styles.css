@@ -173,7 +173,20 @@ nav a:hover {
         0 0 30px #ffcc00;
 }
 
-
+.gallery h2,
+.gallery p {
+    color: #000;
+    text-shadow:
+        0 0 5px #ffffff,
+        0 0 10px #ffffff,
+        0 0 15px #ffffff;
+}
+.gallery h2 {
+    text-shadow:
+        0 0 10px #ffffff,
+        0 0 20px #ffffff,
+        0 0 30px #ffffff;
+}
 /* --------------------------------------------------
    FORMS
 -------------------------------------------------- */
@@ -262,4 +275,11 @@ footer a:hover {
         0 0 10px #ffcc00,
         0 0 20px #ffcc00,
         0 0 30px #ffcc00;
+}
+.gallery-intro {
+    color: #000;
+    text-shadow:
+        0 0 5px #ffffff,
+        0 0 10px #ffffff,
+        0 0 15px #ffffff;
 }

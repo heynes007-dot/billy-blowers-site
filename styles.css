@@ -67,13 +67,14 @@ nav a:hover {
    SERVICES SECTION (FULL WIDTH BACKGROUND)
 -------------------------------------------------- */
 .services {
+    position: relative;
     width: 100%;
+    min-height: 100vh; /* fills the whole screen height */
     background: url("images/BackgroundImage.jpeg") no-repeat center center;
     background-size: cover;
     padding: 40px 0;
-    position: relative;
+    overflow: hidden;
 }
-
 /* Centered content inside */
 .services-positioner {
     max-width: 900px;

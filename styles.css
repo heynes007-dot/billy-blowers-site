@@ -68,15 +68,11 @@ nav a:hover {
     background: url("images/BackgroundImage.jpeg") no-repeat center center;
     background-size: cover;
     color: #000;
-    padding: 30px;
-    max-width: 900px;
-    margin: auto;
+    padding: 30px 0; /* top and bottom only */
 }
 
-/* UL is the anchor for the handyman */
 .services .services-list {
-    position: relative;
-    width: 900px;
+    max-width: 900px;
     margin: 0 auto;
     list-style: none;
     padding: 0;

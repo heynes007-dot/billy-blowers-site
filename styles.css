@@ -1,9 +1,14 @@
 .header-logo {
-    width: 180px;                 /* adjust size if needed */
+    width: 120px;
+    height: auto;
     display: block;
-    margin: 0 auto 15px auto;     /* centers it above the title */
+    margin: 0 auto 15px auto;
     filter: drop-shadow(0 0 10px #ffcc00);
     transition: 0.3s ease;
+    object-fit: contain;
+}
+.header-logo {
+    max-height: 80px;   /* forces the visible logo to be small */
 }
 
 .header-logo:hover {

@@ -74,7 +74,8 @@ nav a:hover {
    SERVICES SECTION
 -------------------------------------------------- */
 .services {
-    background-color: #ffcc00;
+    background: url("images/Backgroundimage.jpeg") no-repeat center center;
+    background-size: cover;
     color: #000;
     padding: 30px;
     max-width: 900px;
@@ -134,7 +135,8 @@ nav a:hover {
    GALLERY
 -------------------------------------------------- */
 .gallery {
-    background-color: #ffcc00;
+    background: url("images/Backgroundimage.jpeg") no-repeat center center;
+    background-size: cover;
     color: #000;
     padding: 30px;
 }

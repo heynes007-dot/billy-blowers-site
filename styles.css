@@ -23,8 +23,6 @@ body {
     margin: 0;
     font-family: 'Anton', 'Arial Black', sans-serif;
     color: #000;
-    background: url("images/BackgroundImage.jpeg") no-repeat center center fixed;
-    background-size: cover;
 }
 /* --------------------------------------------------
    HEADER + NAV

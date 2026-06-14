@@ -191,6 +191,28 @@ button {
     text-align: center;
 }
 
+.contact h2,
+.contact h3,
+.contact p,
+.contact label {
+    color: #000; /* keep the text dark for contrast */
+    text-shadow:
+        0 0 5px #ffffff,
+        0 0 10px #ffffff,
+        0 0 15px #ffffff; /* creates the white halo */
+}
+.contact h2 {
+    text-shadow:
+        0 0 10px #ffffff,
+        0 0 20px #ffffff,
+        0 0 30px #ffffff;
+}
+.contact p,
+.contact label {
+    text-shadow:
+        0 0 4px #ffffff;
+}
+
 /* --------------------------------------------------
    FOOTER
 -------------------------------------------------- */

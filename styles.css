@@ -152,6 +152,8 @@ nav a:hover {
         0 0 30px #ffcc00;
 }
 
+
+
 /* Caption BELOW the image */
 .caption {
     font-size: 0.95em;
@@ -282,4 +284,33 @@ footer a:hover {
         0 0 5px #ffffff,
         0 0 10px #ffffff,
         0 0 15px #ffffff;
+}
+/* Rolling neon glow for Gallery heading */
+.gallery-title {
+    display: inline-block;
+    animation: rollGlow 3s infinite linear;
+    color: #ffcc00;
+}
+
+@keyframes rollGlow {
+    0% {
+        text-shadow: 
+            0 0 5px #ffcc00,
+            0 0 10px #ffcc00;
+        color: #ffcc00;
+    }
+    50% {
+        text-shadow:
+            0 0 10px #ffcc00,
+            0 0 20px #ffcc00,
+            0 0 30px #ffcc00,
+            0 0 40px #ffcc00;
+        color: #ffffff;
+    }
+    100% {
+        text-shadow: 
+            0 0 5px #ffcc00,
+            0 0 10px #ffcc00;
+        color: #ffcc00;
+    }
 }
